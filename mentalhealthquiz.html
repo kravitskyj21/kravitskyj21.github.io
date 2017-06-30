@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+ <html>
+
+ <head>
+      <link rel ="styleSheet" href= "style.css"/> 
+</head>
+
+     
+<body>
+
+    <div id="decorated">hi jenny!</div>
+    
+<script> 
+    prompt("Hi welocome to fight the stigma with a semicolon");
+    prompt("ready to take a little test to see how much you know about mental health");
+    alert("Lets get to it!");
+</script>
+
+<table>
+    <tr>
+        <td colspan="2">
+<h2 id="quizHeader">How much do know about mental health!</h2>
+   
+<h3> Hi my name is Jenny I have been suffering from mental health and would finally like to take a stand against the stigma! I have some facts I would like to share with everyone for you to have a better understanding!  I’ve always been fighting depression creeping into my core. Over the years, I’ve managed to somehow only be half way there. Teetering on the edge of it taking over. Like the intruder lurking in the darkness waiting to strike!I’ve always found it difficult to talk about my feelings and thoughts. Words don’t seem to do justice the depth and intensity of these emotions. My automatic response is to say I’m fine. I’m trying to change this because as John Keating says Dead Poets Society “you must strive to find your own voice. Because the longer you wait to begin, the less likely you are to find it at all”. Having anxiety was my normal.  A stigma (by definition) ‘is a mark of disgrace associated with a particular circumstance, quality, or person.’ Sounds horrible, doesn’t it? Try living with the attachment of a stigma. The feeling of being a disgrace…doesn’t exactly sound pleasant, does it? Well, right now you are surrounded by friends and family, all who will have gone through a rough patch at some point in their lives. But what if it’s not a point?</h3>
+        
+<h3> Its so sad this fact is something i could never beilve but I understand and that is in the past year 8.7 million contemplated serios thoughts of suicde, among them 2 million made suicde plans and about 1 million attempted suicide.</h3></td>
+     </tr>
+     <tr>
+         <td id="quizTd">
+            <table style="width:700px">
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">1. How many people suffer from mental illness each year? #1</p>
+
+	    	<ul>
+	    	<input id ="1a" class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">about 40 million </label>
+	    	<br>
+	        <input id="1b" class="answer" type="radio" name="q1" value="0">
+	        <label>about 20 million</label>
+	        <br>
+	        <input id="1c" class="answer" type="radio" name="q1" value="0">
+	        <label>about 10 million</label>
+	        <br>
+	        <input id="1d" class="answer" type="radio" name="q1" value="0">
+	        <label>About 100 thousand</label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">2.Which effect is true #2</p>
+
+	    	<ul>
+	        <input id="2a" class="answer" type="radio" name="q2" value="0">
+	        <label>10 million face addiction</label>
+	        <br>
+	        <input id="2b" class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">all </label>
+	        <br>
+	        <input id="2c" class="answer" type="radio" name="q2" value="0">
+	        <label>26% are homeless</label>
+	        <br>
+	        <input id="2d" class="answer" type="radio" name="q2" value="0">
+	        <label>24% end up in jail</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div>
+	  		<p class="question">3. How many diiferrant types of mental health are there?  #3</p>
+
+	    	<ul>
+	        <input id="3a" class="answer" type="radio" name="q3" value="0">
+	        <label>100</label>
+	        <br>
+	        <input id="3b" class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3"> 200</label>
+	        <br>
+	        <input id="3c" class="answer" type="radio" name="q3" value="0">
+	        <label>50</label>
+	        <br>
+	        <input id="3d" class="answer" type="radio" name="q3" value="0">
+	        <label>250</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div>
+	  		<p class="question">4. What percent of people with mental health are getting help #4</p>
+
+	    	<ul>
+	        <input id="4a" class="answer" type="radio" name="q4" value="0">
+	        <label>50%</label>
+	        <br>
+	        <input id="4b" class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">60%</label>
+	        <br>
+	        <input id="4c" class="answer" type="radio" name="q4" value="0">
+	        <label>40%</label>
+	        <br>
+	        <input id="4d" class="answer" type="radio" name="q4" value="0">
+	        <label>90%</label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+             <!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+         </td>
+         
+         <td colspan="2"> <iframe width="760" height="500" src="https://www.youtube.com/embed/Koss6rrPlw0" frameborder="0" allowfullscreen></iframe></td>
+    </tr>
+    
+
+</table>
+    
+    <canvas id="canvas" width="10000px" height="600px"></canvas>        
+        <br />
+        <input type="color" id="color" onchange="changeColor()" /> 
+        <input type="button" value="Change Size" />
+        <select id="tool" onchange="changeTool()">
+            <option value="square">Square</option>
+            <option value="circle">Circle</option>
+            <option value="slinky">Slinky</option>
+        </select>
+        <input type="button" value="Save Image" oneclick"saveImage()" />
+        <input type="button" value="Clear" onclick="clearCanvas()" />
+    
+<script> function submitQuiz(){
+   var a1 = document.getElementById("1a");  
+   var b2 = document.getElementById("2b");
+   var b3 = document.getElementById("3b");
+   var b4 = document.getElementById("4b");
+            
+    var counter =0; 
+            if(a1.checked == true){
+                counter = counter + 1;
+            }
+            
+            if(b2.checked == true){
+                counter = counter + 1;
+            }
+            
+            if(b3.checked == true){
+                counter = counter + 1
+            }
+            
+            if(b4.checked == true){
+                counter = counter + 1
+            }
+            
+       alert("You got " + counter + " out of 4 correct");
+        } </script>
+    <script type="text/javascript" src="canvas.js"></script>
+    
+     </body>
+     
+</html>
+

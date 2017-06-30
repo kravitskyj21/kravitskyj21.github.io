@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jennys page</title>
+    <script>console.log("Welcome!");</script>
+</head>
+<body>
+        <canvas id="canvas" width="600" height="600"></canvas>        
+        <br />
+        <input type="color" id="color" onchange="changeColor()" /> 
+        <input type="button" value="Change Size" />
+        <select id="tool" onchange="changeTool()">
+            <option value="square">Square</option>
+            <option value="circle">Circle</option>
+            <option value="slinky">Slinky</option>
+        </select>
+        <input type="button" value="Save Image" oneclick"saveImage()" />
+        <input type="button" value="Clear" onclick="clearCanvas()" />
+        <script type="text/javascript" src="canvas.js"></script>  
+</body>
+</html>
